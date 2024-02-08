@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre: ismael matias
+apellido:tchamousou gratz
 ---
 Ejercicio: entrada_salida_07
 ---
@@ -48,16 +48,33 @@ class App(customtkinter.CTk):
         self.btn_dividir = customtkinter.CTkButton(master=self, text="Dividir", command=self.btn_dividir_on_click)
         self.btn_dividir.grid(row=5, pady=10, columnspan=2, sticky="nsew")
 
+
     def btn_sumar_on_click(self):
+        numero_a = self.txt_operador_a.get()
+        numero_b = self.txt_operador_b.get()
+        suma = int(numero_a) + int(numero_b)
+        alert("resultado","el resultado es " + str(suma))
         pass
 
     def btn_restar_on_click(self):
+        numero_a = self.txt_operador_a.get()
+        numero_b = self.txt_operador_b.get()
+        resta = int(numero_a) - int(numero_b)
+        alert("resta","la resta es : " + str(resta))
         pass
 
     def btn_multiplicar_on_click(self):
+        numero_a = self.txt_operador_a.get()
+        numero_b = self.txt_operador_b.get()
+        multiplicacion = int(numero_a) * int(numero_b)
+        alert("multiplicacion","la multiplicacion es : " + str(multiplicacion))
         pass
 
     def btn_dividir_on_click(self):
+        numero_a = self.txt_operador_a.get()
+        numero_b = self.txt_operador_b.get()
+        divicion = int(numero_a) / int(numero_b)
+        alert("divicion","la divicion es : " + str(divicion))
         pass
         
 if __name__ == "__main__":

@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre:  ismael matias
+apellido:tchamousou gratz
 ---
 Ejercicio: entrada_salida_02
 ---
@@ -28,6 +28,8 @@ class App(customtkinter.CTk):
 
     def btn_mostrar_on_click(self):
         pass
+    Variable = prompt ("mensaje","cual es el dato?")
+    alert("dato", Variable)
         
         
     
