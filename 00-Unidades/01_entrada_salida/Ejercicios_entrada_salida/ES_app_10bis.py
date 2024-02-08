@@ -49,7 +49,6 @@ class App(customtkinter.CTk):
         alert ("descuento", "con un descuento del " + str(descuento)+ "%" + " el precio de la compra es de " + str(descuento_tot))
         pass
 
-
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
